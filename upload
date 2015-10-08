@@ -1,0 +1,10 @@
+#一键提交
+#git init
+
+
+echo "请输入本次提交的说明:"
+read description
+git add -A
+git commit -m "$description" .
+git remote add origin git@github.com/a5pop/a5pop.github.io.git
+git push -u origin master
